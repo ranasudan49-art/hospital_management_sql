@@ -7,16 +7,9 @@
 -- 1. DATABASE CREATION
 -- ============================================================
 CREATE DATABASE rana_202510331_hospital_management;
-
--- In pgAdmin: open the new database, then run everything below.
-
 -- ============================================================
 -- 2. TABLE CREATION
 -- ============================================================
-
-DROP TABLE IF EXISTS visits CASCADE;
-DROP TABLE IF EXISTS doctors CASCADE;
-DROP TABLE IF EXISTS patients CASCADE;
 
 CREATE TABLE patients (
     patient_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
